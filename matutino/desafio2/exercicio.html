@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+	<title>Desafio 2</title>
+    </head>
+    <body>
+        
+        <script>
+            //Thiago - Matutino
+            
+            //Questão 4
+        
+            var numero = parseInt( prompt('Digite um número') );
+            var dobro = numero * 2;
+            var metade = numero / 2;
+            
+            document.write("Numero:"+numero+"/ Dobro:"+dobro+"/Metade:"+metade);
+            
+            alert( numero++ );
+            
+            /*
+                Pré-Incremento atualiza o valor da variável na mesma linha em que foi executado.
+                Pós-Incremento atualiza o valor da variável apenas na proxima linha ao que foi executado.         
+            */
+            
+            //Questão 5
+            
+            var ano = parseInt( prompt("Digite o ano que você nasceu:")  );
+        
+            var idade = 2017 - ano;
+            
+            document.write("<hr>");
+            document.write("Ano: "+ano+"/Idade:"+idade);
+            
+            idade += 5;
+            document.write("Daqui a 5 anos essa pessoa terá:"+idade);
+            
+            
+            console.log( ano >= 1990 );
+            console.log( ano < 2017 );
+            
+            
+        </script>
+        
+        
+        
+       
+    </body>
+</html>

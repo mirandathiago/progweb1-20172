@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+	<title>Aula 5</title>
+    </head>
+    <body>
+        
+        <script>
+            //Thiago - Noturno
+            
+            //Questão 4
+            
+            var numero = parseInt( prompt("Digite um Numero") );
+            
+            var dobro = numero * 2;
+            var metade = numero / 2;
+            
+            document.write("Número:"+numero+"/Dobro:"+dobro+"/Metade:"+metade+"<br>");
+            
+            numero++;
+            alert( numero );
+            
+            
+            /*
+                Pré-Incremento: A Atualização do valor da variável ocorre na mesma linha em que foi executado. Ex:++a
+            
+                Pós-Incremento: A atualização do valor da variável ocorre somente na próxima linha ao que foi executado. Ex: a++
+                        
+             */
+            
+            //Questão5
+            
+            var ano = parseInt( prompt("Digite o ano de Nascimento")  );
+            
+            var idade = 2017 - ano;
+            
+            document.write("Ano de Nascimento:"+ano+" / Idade:"+idade+"<br>");
+                           
+            idade += 5;
+            
+            document.write("Daqui a 5 anos essa pessoa terá: "+idade);
+            
+            
+            console.log( ano >= 1990 );
+            
+            console.log( ano < 2017 );
+            
+            
+            
+            
+        </script>
+       
+    </body>
+</html>
