@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+	<title>Aula 5</title>
+    </head>
+    <body>
+            
+        <script>
+            
+            
+            var menu = prompt("MENU \n 1- Digite seu nome \n 2-Digite seu Sexo(M ou F)");
+            
+            menu = parseInt( menu );
+           
+            
+            switch(menu){
+               
+                case 1:
+                case 3:    
+                    var nome = prompt("Digite o nome");
+                    document.write(nome);
+                break;
+                case 2:
+                    var sexo = prompt("Digite o sexo (M ou F)");
+                    
+                    switch(sexo){
+                        case "M":
+                            alert("Masculino");
+                        break;
+                        case "F":
+                            alert("Feminino");
+                        break;    
+                    }
+                    
+                    
+                break;
+               default:
+                    alert("Código Inválido!");
+                break;    
+            }
+            
+            
+            
+        
+        </script>
+       
+    </body>
+</html>

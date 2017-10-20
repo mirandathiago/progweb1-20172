@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+	<title>Desafio</title>
+    </head>
+    <body>
+        
+        <script>
+               //Correção da Questão 3
+            
+     var salario = parseFloat(prompt("Digite o salario"));
+      
+     var porcentagem;
+     var porcentagem2;
+            
+            
+     if( salario <= 280 ){
+         porcentagem = "20%";
+         porcentagem2 = 0.2;
+     }else if(salario > 280 && salario <= 700){
+         porcentagem = "15%";
+         porcentagem2 = 0.15;
+     }else if(salario > 700 && salario <= 1500){
+         porcentagem = "10%";
+         porcentagem2 = 0.1;
+     }else{
+         porcentagem = "5%";
+         porcentagem2 = 0.05;
+     }
+            
+     var aumento = salario * porcentagem2;
+     var salarionovo = salario + aumento;
+           
+    document.write("O Salário foi aumentado em "+porcentagem+" O valor anterior era de R$"+salario+" aumentou R$"+aumento+" e ficou R$"+salarionovo);        
+            
+        
+            
+        </script>
+        
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+	<title>Desafio</title>
+    </head>
+    <body>
+        
+        <script>
+               //Correção da Questão 1
+        
+      var velocidade = parseInt( prompt("Digite o velocidade") );
+            
+     if(velocidade > 80){
+         
+         document.write("<h1>Velocidade Máxima Ultrapassada</h1>");
+         
+         let passou = velocidade - 80;
+         let multa = passou * 5;
+         
+         document.write("O Valor da Multa é de R$"+multa);
+         
+         
+     }else{
+         document.write("<h1>Velocidade Permitida</h1>");
+     }        
+            
+            
+            
+        </script>
+        
+    </body>
+</html>

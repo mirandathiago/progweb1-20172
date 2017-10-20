@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+	<title>Aula 5</title>
+    </head>
+    <body>
+        
+        <script>
+            //Thiago - Noturno
+            
+            //Questão 3
+            
+            
+            var salario = parseFloat( prompt("Digite o salario") );
+            
+            var porcentagem;
+            
+            if(salario <= 280){
+                porcentagem = 20;
+            }else if(salario > 280 && salario <= 700){
+                porcentagem = 15;
+            }else if(salario > 700 && salario <= 1500){
+                porcentagem = 10;
+            }else{
+                porcentagem = 5;
+            }
+            
+        
+            
+            var aumento  = salario * ( porcentagem / 100 );
+            var salarionovo = salario + aumento;
+            
+            
+            document.write("O salario era de R$"+salario+" foi aumentado em "+porcentagem+"% com o valor de R$"+aumento+" ficando em R$"+salarionovo);
+            
+          
+            
+            
+        </script>
+       
+    </body>
+</html>
