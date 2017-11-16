@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+	<title>Desafio 5</title>
+    </head>
+    <body>
+        
+        <script>
+          
+        var linhaA = parseInt(prompt("Digite"));
+        var linhaB = parseInt(prompt("Digite"));
+        var linhaC = parseInt(prompt("Digite"));
+            
+        if( linhaA < (linhaB + linhaC) && 
+            linhaB < (linhaA + linhaC) && 
+            linhaC < (linhaA + linhaB) ){
+            
+            alert("Triângulo");
+            
+            if( linhaA != linhaB && linhaB != linhaC && linhaA != linhaC ){
+                alert("Escaleno!");
+            }else if(linhaA == linhaB && linhaB == linhaC && linhaA == linhaC){
+                alert("Equilatero")
+            }else{
+                alert("Isóceles");
+            }
+            
+            
+            
+            
+            
+        }else{
+            alert("Não é um Triângulo");
+        }    
+        </script>
+        
+        
+       
+    </body>
+</html>

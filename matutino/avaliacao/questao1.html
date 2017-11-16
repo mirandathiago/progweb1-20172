@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+	<title>Avaliação</title>
+    </head>
+    <body>
+        
+        <script>
+        /*
+            Faça um programa que peça uma nota, entre zero e dez. Mostre uma mensagem caso o valor seja inválido (Maior que 10 ou menor que 0) e continue pedindo até que o usuário informe um valor válido. (Utilize a Estrutura Do While e IF) (25%)
+
+        
+        */
+        
+        do{    
+         var nota = parseFloat(prompt("Digite a nota") );   
+            
+            if( nota < 0 || nota > 10 ){
+                alert("Nota Inválida! Digite Novamente!");
+            }else{
+                alert("Nota Válida!");
+            }
+            
+            
+        }while(nota < 0 || nota > 10);
+            
+        
+        
+        </script>
+        
+        
+        
+       
+        
+        
+        
+    </body>
+</html>

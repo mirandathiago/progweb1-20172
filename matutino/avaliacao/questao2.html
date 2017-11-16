@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+	<title>Avaliação</title>
+    </head>
+    <body>
+        
+        <script>
+        /*
+           Numa eleição existem três candidatos. Faça um programa que peça o número total de eleitores. Realize uma repetição para que cada eleitor possa realizar o seu voto, A cada voto deverá ser solicitado que seja digitado 1 para o Candidato 1, 2 para o Candidato 2 e 3 para o Candidato 3, a cada voto realizado deverá ser somado a quantidade de votos do respectivo candidato. Ao final deverá ser informado a quantidade de votos de cada candidato. (Utilize as estruturas WHILE e SWITCH). Adicione após a repetição a informação de qual candidato foi o vencedor. (Utilize a estrutura IF ) (35%)
+      
+        */
+        
+       
+        var eleitores = parseInt( prompt("Digite o numero de  eleitores") );
+        var candidato1 = 0;
+        var candidato2 = 0;    
+        var candidato3 = 0;    
+            
+            
+        while(eleitores > 0){
+            
+            var voto = parseInt( prompt("VOTAÇÃO: Digite 1, 2 ou 3 para votar no seu candidato!") );
+            
+            switch(voto){
+                case 1:
+                    candidato1++;
+                break;
+                case 2:
+                    candidato2++;
+                break;
+                case 3:    
+                    candidato3++;
+                break;    
+            }
+            
+            
+            eleitores--;
+        }    
+            
+         document.write("Votos: Candidato1:"+candidato1+" Candidato2:"+candidato2+" Candidato3:"+candidato3);
+            
+        
+         if(candidato1 > candidato2 && candidato1 > candidato3){
+             document.write("<br>");
+             document.write("Candidato1 Venceu!");
+         }else if(candidato2 > candidato3){
+             document.write("<br>");
+             document.write("Candidato2 Venceu!");
+         }else{
+             document.write("<br>");
+             document.write("Candidato3 venceu!");
+         }    
+            
+            
+            
+            
+        
+        </script>
+        
+        
+        
+       
+        
+        
+        
+    </body>
+</html>

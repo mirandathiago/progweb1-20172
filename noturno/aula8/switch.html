@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+	<title>Aula 8</title>
+    </head>
+    <body>
+        
+        <script>
+        
+            var menu = prompt("MENU\n1-Cadastrar Nome\n2-Cadastrar Sexo");
+            menu = parseInt( menu );
+            
+            
+            switch(menu){
+                case 1:
+                    var nome = prompt("Digite o nome");
+                    document.write("Nome:"+nome);
+                break;
+                case 2:
+                    var sexo = prompt("Digite o sexo(M ou F)");
+                    
+                    switch(sexo){
+                        case "M":
+                        case "m":    
+                            document.write("Masculino");
+                        break;
+                        case "F":
+                        case "f":    
+                            document.write("Feminino");
+                        break;
+                        
+                    }
+                    
+                    
+                break;
+                default:
+                    alert("Opção Inválida!");
+                break;    
+            }
+            
+        
+        
+        </script>
+        
+        
+       
+    </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+	<title>Aula 9</title>
+    </head>
+    <body>
+        
+        <script>
+        
+          var login, senha, menu;
+            
+          
+            do{
+            
+            menu = parseInt( prompt("MENU - Digite a Opção Desejada:\n1- Digitar o login\n2-Digitar a senha\n3-Validar login e senha\n4-Sair") );
+        
+               switch(menu){
+                   case 1:
+                       login = prompt("Digite o login");
+                   break;
+                   case 2:
+                       senha = prompt("Digite a Senha");
+                    break;
+                   case 3:
+                       
+                       if(login == "admin" && senha == "123"){
+                           
+                           alert("Seja Bem Vindo!");
+                           
+                       }else{
+                           alert("Dados Inválidos!");
+                       }
+                       
+                    break;
+                    case 4:
+                       alert("XAU! Até Mais!");
+                    break;       
+                    default:
+                       alert("Código Inválido");
+                    break;
+                       
+               }
+                
+                
+            
+            }while(menu != 4);
+            
+            
+            
+        
+        </script>
+        
+        
+       
+    </body>
+</html>
